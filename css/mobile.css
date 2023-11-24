@@ -1,0 +1,101 @@
+@media only screen and (max-width: 480px) {
+  /****** NAVBAR ******/
+  /* TODO: dont display navbar except if burger is clicked */
+
+  /****** GENERAL ******/
+
+  #kstmp-main .ks-button {
+    outline: none;
+  }
+
+  /****** VIDEOS ******/
+
+  #kstmp-videos .videos-container {
+    gap: var(--stripe3);
+  }
+  #kstmp-videos .video-iframe-wrapper {
+    width: 90%;
+  }
+  
+  /****** PHOTOS ******/
+
+  #kstmp-videos,
+  #kstmp-photos,
+  #kstmp-events,
+  #kstmp-contact {
+    margin: 0 var(--stripe);
+  }
+  #kstmp-photos .presentation-container {
+    height: fit-content;
+  }
+  #carousel-main {
+    display: none;
+  }
+  #carousel-container #carousel-thumbnails {
+    gap: var(--stripe3);
+  }
+  #carousel-container #carousel-thumbnails > img.ogcar-thumbnail {
+    filter: none;
+    outline: none;
+    max-width: 90%;
+  }  
+  #carousel-container #carousel-thumbnails > img.ogcar-thumbnail-active {
+    filter: none;
+    outline: none;
+  }
+
+  /****** EVENTS ******/
+
+  #kstmp-events .events-container {
+    flex-direction: column;
+    gap: var(--stripe3);
+  }
+  #kstmp-events .events-container #leaflet-map {
+    border: none;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  /****** CONTACT ******/
+
+  #kstmp-contact .contact-container {
+    flex-direction: column;
+    gap: var(--stripe3);
+  }
+  #kstmp-contact .contact-container .social-networks {
+    margin: auto;
+    flex-direction: row;
+    /* gap: var(--stripe3); */
+  }
+  #kstmp-contact .contact-container .social-networks h3 {
+    display: none;
+  }
+  #kstmp-contact .contact-links,
+  #kstmp-contact .pro-links {
+    text-align: center;
+  }
+}
+
+/* TODO: refactor this (same as above) */
+@media only screen and (max-height: 480px) {
+  #kstmp-photos .presentation-container {
+    height: fit-content;
+  }
+  #carousel-main {
+    display: none;
+  }
+  #carousel-container #carousel-thumbnails {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--stripe3);
+  }
+  #carousel-container #carousel-thumbnails > img.ogcar-thumbnail {
+    filter: none;
+    outline: none;
+    max-width: 90%;
+  }  
+  #carousel-container #carousel-thumbnails > img.ogcar-thumbnail-active {
+    filter: none;
+    outline: none;
+  }
+}

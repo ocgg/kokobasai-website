@@ -1,0 +1,98 @@
+.presentation-container {
+  display: block;
+  gap: var(--stripe2);
+  height: 100vh;
+  width: 100%;
+}
+
+.presentation-container > * {
+  min-width: 0;
+}
+
+/****** GENERAL ******/
+
+/****** VIDEOS ******/
+
+.videos-container {
+  width: 100%;
+  /* FLEX */
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--stripe) * 10);
+  align-items: center;
+}
+
+.video-iframe-wrapper {
+  position: relative;
+  width: 71%;
+  aspect-ratio: 16/9;
+  filter: var(--darker);
+  transition: filter var(--transition-time) ease;
+}
+.video-iframe-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  cursor: pointer;
+}
+.videos-container .video-item {
+  width: 100%;
+  height: 100%;
+}
+
+.videos-container .ks-video-link  {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.videos-container .ks-video-link:hover .kstmp-media-icon {
+  transform: rotate(360deg);
+}
+
+/****** CAROUSEL ******/
+
+#carousel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+#carousel-thumbnails {
+  width: 100%;
+  /* FLEX */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: var(--stripe);
+}
+
+#carousel-thumbnails img.ogcar-thumbnail {
+  display: block;
+  filter: var(--darker);
+  width: 100%;
+  flex: 1 0 200px;
+  max-width: 200px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  outline: var(--quarter-stripe) solid transparent;
+  transition:
+    filter 1s ease,
+    outline-color 1s ease;
+}
+
+#carousel-thumbnails img.ogcar-thumbnail-active {
+  filter: none;
+  outline-color: var(--white);
+}
+
+/****** INTER-SECTION ******/
+
+.inter-section-img-container {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+}

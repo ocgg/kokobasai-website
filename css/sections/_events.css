@@ -1,0 +1,91 @@
+.events-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 33vh;
+  gap: var(--stripe2)
+}
+
+.events-container > * {
+  /* flex: 1 0 50%; */
+  width: 100%;
+}
+
+/****** EVENTS LIST ******/
+
+#events-list {
+  /* width: 100%; */
+  min-width: 0;
+}
+
+#events-list ul {
+  list-style: none;
+}
+
+#events-list ul li input {
+  display: none;
+}
+
+#events-list ul li label {
+  display: flex;
+  justify-content: space-between;
+  padding: .2em .5em;
+}
+/* #events-list ul li label > div { */
+  /* font-size: large; */
+/* } */
+#events-list ul li label div:first-child {
+  flex: 0 0 8em;
+}
+#events-list ul li label div:nth-child(2) {
+  flex: 1 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#events-list ul li label .events-list-dropdown-arrow {
+  display: inline-block;
+  transition: transform var(--transition-time) ease;
+}
+
+#events-list ul li .events-list-dropdown {
+  overflow-y: scroll;
+  height: 0;
+  padding-left: 1.5vw;
+  margin-left: 1vw;
+  border-left: var(--stripe) solid var(--white);
+  transition:
+    all var(--transition-time) ease,
+    margin var(--transition-time) ease;
+}
+#events-list ul li .events-list-dropdown .event-hour {
+  float: right;
+}
+
+/* #events-list ul li input:checked + label {
+  color: var(--dark);
+  background-color: var(--white);
+} */
+#events-list ul li input:checked ~ .events-list-dropdown {
+  margin-top: .5em;
+  margin-bottom: 2em;
+  height: 4.5em;
+}
+#events-list ul li input:checked ~ label .events-list-dropdown-arrow {
+  transform: rotate(-180deg);
+}
+#events-list ul li .events-list-dropdown a {
+  font-weight: bold;
+}
+
+/****** EVENTS MAP ******/
+
+#leaflet-map {
+  height: 50vh;
+  border: var(--quarter-stripe) solid white;
+  filter: grayscale(.33) brightness();
+}
+
+#leaflet-map p {
+  margin: 0;
+}

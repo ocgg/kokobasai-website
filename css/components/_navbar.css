@@ -1,0 +1,88 @@
+/****** NAVBAR ******/
+
+#kstmp-navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  font-family: var(--header-font);
+  font-size: 30px;
+}
+
+#kstmp-navbar-logo {
+  position: relative; /* needed for hiding transition */
+  top: calc(var(--bar-height) - (.75 * var(--bar-height)));
+  height: calc(var(--bar-height) + (var(--bar-height) / 4));
+}
+
+#kstmp-navbar ul {
+  position: relative;
+  height: var(--bar-height);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: var(--dark);
+  transition: transform var(--transition-time) ease;
+}
+#kstmp-navbar li {
+  text-decoration: none;
+}
+
+#kstmp-navbar li a {
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+/* Burger Button */
+
+#kstmp-burger {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  gap: 8px;
+  width: 3rem;
+  height: 2.5rem;
+  transition: all var(--transition-time);
+  background-color: var(--dark);
+  border-radius: 7px;
+}
+#kstmp-burger:hover {
+  cursor: pointer;
+}
+#kstmp-burger-input {
+  display: none;
+  visibility: hidden;
+}
+#kstmp-burger span {
+  width: 40px;
+  height: 4px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: var(--transition-time) ease;
+}
+#kstmp-burger-input:checked ~ span:nth-of-type(1) {
+  transform:
+    translateY(300%)
+    rotate(45deg);
+  width: 21px;
+  height: 4px;
+}
+#kstmp-burger-input:checked ~ span:nth-of-type(2) {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+#kstmp-burger-input:checked ~ span:nth-of-type(3) {
+  transform:
+    translateY(-300%)
+    rotate(-45deg);
+  width: 21px;
+  height: 4px;
+}

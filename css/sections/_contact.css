@@ -1,0 +1,29 @@
+#kstmp-contact .contact-container {
+  display: flex;
+  justify-content: center;
+  gap: var(--stripe3);
+}
+
+.contact-container .social-networks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+/* .contact-container .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  color: var(--dark);
+} */
+
+.contact-container .contact-form input::placeholder,
+.contact-container .contact-form textarea::placeholder {
+  font-style: italic;
+}
+
+.contact-container .contact-form input[type=submit] {
+  border: 0 none;
+  cursor: pointer;
+}

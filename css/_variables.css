@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'alex_brushregular';
+  src: url('../assets/fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/alexbrush-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bebas';
+  src: url('../assets/fonts/Bebas-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt_sans_narrow';
+  src: url('../assets/fonts/ptn57f-webfont.woff2') format('woff2'),
+       url('../assets/fonts/ptn57f-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt_sans_narrow';
+  src: url('../assets/fonts/ptn77f-webfont.woff2') format('woff2'),
+       url('../assets/fonts/ptn77f-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/****** VARIABLES ******/
+
+:root {
+  /* COLORS */
+  --dark: black;
+  --white: white;
+
+  /* IMAGE MODIFICATION */
+
+  --darker: grayscale(80%) brightness(90%); 
+
+  /* FONTS */
+
+  /* Families */
+  --main-font: 'pt_sans_narrow', sans-serif;
+  --header-font: 'bebas', sans-serif;
+  --special-font: 'alex_brushregular', cursive;
+
+  /* Sizing */
+  
+
+  /* DIMENSIONS */
+
+  --bar-height: 60px;
+  --inter-section-space: 33vh;
+  --stripe: 20px;
+  --half-stripe: calc(var(--stripe) / 2);
+  --quarter-stripe: calc(var(--stripe) / 4);
+  --stripe2: calc(2 * var(--stripe));
+  --stripe3: calc(3 * var(--stripe));
+
+  /* TIME */
+
+  --medium-time: .6s;
+  --transition-time: .3s;
+  
+  /* HELPERS */
+}
