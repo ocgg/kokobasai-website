@@ -37,7 +37,7 @@ h1, h2, h3, h4 {
   color: var(--white);
   font-weight: bold;
   text-decoration: underline;
-  padding: .1em .3em;
+  /* padding: .1em .3em; */
 }
 .text-link p span {
   transition: all var(--transition-time) ease;
@@ -169,12 +169,4 @@ header h2::first-letter {
 }
 .kstmp-media-icon:hover {
   transform: rotate(360deg);
-}
-
-/****** FOOTER ******/
-
-#kstmp-footer {
-  height: var(--bar-height);
-  border: 1px solid var(--white);
-  width: 100%;
 }

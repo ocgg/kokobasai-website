@@ -1,0 +1,17 @@
+#kstmp-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--bar-height);
+  margin-top: var(--inter-section-space);
+  padding: 0 1em;
+}
+
+#kstmp-footer > div p {
+  display: inline;
+}
+
+#kstmp-footer a {
+  font-weight: bold;
+  text-decoration: underline;
+}
