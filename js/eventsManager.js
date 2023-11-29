@@ -46,7 +46,7 @@ export class eventsManager {
     
     this.events.forEach((event, index) => {
       const link = event.link
-        ? `<a href ="${event.link}" target="_blank">Voir l'évènement</a>`
+        ? `<a class="text-link" href="${event.link}" target="_blank"><p><span>V</span>oir l'évènement</p></a>`
         : '';
       const addressData = this.getAddressDataFrom(event.address);
 
