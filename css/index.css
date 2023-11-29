@@ -33,6 +33,22 @@ h1, h2, h3, h4 {
   font-family: var(--header-font);
 }
 
+.text-link p {
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: underline;
+  padding: .1em .3em;
+}
+.text-link p span {
+  transition: all var(--transition-time) ease;
+}
+.text-link:hover p span {
+  padding: 0 .1em;
+  margin-right: .1em;
+  background-color: var(--white);
+  color: var(--dark);
+}
+
 .inter-section {
   margin-bottom: var(--inter-section-space);
 }
@@ -45,25 +61,12 @@ h1, h2, h3, h4 {
 /****** GLOBAL COMPONENTS ******/
 
 .ks-button {
-  padding: 0em 1.2em;
-  outline: var(--quarter-stripe) solid var(--white);
-  color: var(--white);
-  background-color: var(--dark);
-  font-family: var(--main-font);
-  font-weight: bold;
-  transition: all var(--medium-time) ease;
-}
-
-.ks-button:hover {
-  color: var(--dark);
-  background-color: var(--white);
+  padding: .2em 1.2em;
+  font-size: 1.3em;
 }
 .ks-button .kstmp-media-icon {
   filter: invert();
-  transition: all var(--medium-time) ease;
-}
-.ks-button:hover .kstmp-media-icon {
-  filter: none;
+  transition: none;
 }
 
 /****** front-page ******/

@@ -53,7 +53,7 @@
   height: 0;
   padding-left: 1.5vw;
   margin-left: 1vw;
-  border-left: var(--stripe) solid var(--white);
+  /* border-left: var(--stripe) solid var(--white); */
   transition:
     all var(--transition-time) ease,
     margin var(--transition-time) ease;
