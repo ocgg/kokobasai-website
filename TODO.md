@@ -16,6 +16,7 @@
   - Pouvoir agrandir en cliquant dessus ?
 - Animation sur les header H2, avec des bandes blanches ?
 - refactoriser des tas de trucs dans eventManager.js
+- logo GH sur le footer
 
 ### RESPONSIVE
 
