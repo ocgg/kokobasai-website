@@ -26,6 +26,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'cooper_hewittmedium';
+  src: url('../assets/fonts/cooperhewitt-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ambleregular';
+  src: url('../assets/fonts/amble-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /****** VARIABLES ******/
 
 :root {
@@ -40,7 +54,7 @@
   /* FONTS */
 
   /* Families */
-  --main-font: 'pt_sans_narrow', sans-serif;
+  --main-font: 'ambleregular', sans-serif;
   --header-font: 'bebas', sans-serif;
   --special-font: 'alex_brushregular', cursive;
 

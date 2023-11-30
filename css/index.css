@@ -33,20 +33,41 @@ h1, h2, h3, h4 {
   font-family: var(--header-font);
 }
 
-.text-link p {
+.text-link {
+  display: flex;
+  align-items: center;
   color: var(--white);
   font-weight: bold;
   text-decoration: underline;
   /* padding: .1em .3em; */
 }
-.text-link p span {
+.text-link span {
+  position: relative;
   transition: all var(--transition-time) ease;
 }
-.text-link:hover p span {
+.text-link span::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  height: 200%;
+  width: 100%;
+  top: -300%;
+  right: 0;
+  backdrop-filter: invert(0);
+  transition: all var(--transition-time) ease;
+}
+.text-link:hover span {
+  text-decoration: none !important;
   padding: 0 .1em;
   margin-right: .1em;
-  background-color: var(--white);
-  color: var(--dark);
+  /* background-color: var(--white); */
+}
+.text-link:hover span::before {
+  backdrop-filter: invert(1);
+  top: -50%;
+}
+.text-link img {
+  margin-left: .5em;
 }
 
 .inter-section {
