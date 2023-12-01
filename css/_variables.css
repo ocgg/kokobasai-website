@@ -63,7 +63,7 @@
 
   /* DIMENSIONS */
 
-  --bar-height: 60px;
+  --bar-height: 100px;
   --inter-section-space: 33vh;
   --stripe: 20px;
   --half-stripe: calc(var(--stripe) / 2);

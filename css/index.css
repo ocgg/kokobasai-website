@@ -180,14 +180,3 @@ header h2::first-letter {
   font-size: calc(30px + 2vw);
   line-height: 1em;
 }
-
-/****** CONTACT ******/
-
-.kstmp-media-icon {
-  height: 2em;
-  fill: var(--white);
-  transition: transform .4s ease-out;
-}
-.kstmp-media-icon:hover {
-  transform: rotate(360deg);
-}
