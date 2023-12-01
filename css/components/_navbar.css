@@ -25,6 +25,7 @@
   align-items: center;
   list-style: none;
   background-color: var(--dark);
+  transform: translateY(calc(-1 *  var(--bar-height)));
   transition: transform var(--transition-time) ease;
 }
 #kstmp-navbar li {
